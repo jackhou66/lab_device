@@ -1,0 +1,56 @@
+platform: python flet   , 
+
+APP    :IOT device borrow  platform  
+
+Considering I am IOT student and we always rent the devices from the school ,but it always depend on the paper mark .  
+I think the good idea is developing a system or web platform to make it almost automatically .
+so, I determined to create a platform for this.
+you guys can build the from work 
+(jiancai hou :I will build the database for my data manager course , so do not follow my topic if any one has the data manager course )
+
+
+function :  
+
+login page , device_category_page,  order list page , current devices  list page,   history list  page 
+
+login page :  student  and manager can login the main page the same time .  but student use student card number and manager use the staff card number .
+they can use the card number and their password to login in   
+
+device_category_page:  show all of devices  the school have  ,  and you can order the device  you want ,
+
+order  list page  :  can order the different  devices  and  make order , has decision button  and cancel button 
+
+current devices  list page  : can  check  the list of  borrowed  list but returning 
+
+history list  page :  the list of  borrowed  and returned  
+
+page design logic:
+
+1. when  login in ,  first page is  device_category  page , there are list or table  show all of devices  the school have.  
+
+2 help modify the device_category , which table´s row has a check box or some other box ,  the users  can choice  
+and when click it will into the Order page , and Order page show what we prepare to  order, show the order in table list 
+
+3.OrderPage  has a cancel  and order button , when click the order button , the data will add in the dababase :
+select * from  rental_transaction
+
+complex function (maybe in future we can achieve ) :
+
+1.  device list and number ,  when borrow or return ,  the list page will update ,
+
+other command , you can ignore :
+
+npm init -y
+npm install express mysql body-parser
+node server.js 
+npm install MySQL   or  npm install mysql2
+npm install express
+npm install cors
+npm install bcrypt
+ 
+
+
+record:
+http://localhost:62808/#/order
+
+
